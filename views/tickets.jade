@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1.
+    Tickets:
+  table
+    thead
+      tr
+        td.
+          time
+        td.
+          name
+        td.
+          location
+        td.
+          issue
+        td.
+          status
+    tbody
+      for ticket in tickets
+        tr
+          td= ticket.time
+          td= ticket.name
+          td= ticket.location
+          td= ticket.issue
+          td= ticket.status
